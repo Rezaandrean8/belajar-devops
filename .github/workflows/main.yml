@@ -31,3 +31,15 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           source: "path/to/your/local/project"
           remote_path: "${{ secrets.REMOTE_PATH }}"
+
+      # Add more steps as needed, such as testing, database migration, etc.
+      - name: Run tests
+        run: npm test
+
+      - name: Database migration
+        run: |
+          # Add commands to run database migration script
+          # Example:
+          # php artisan migrate
+
+      # Add any additional steps for your application deployment process
