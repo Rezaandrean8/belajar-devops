@@ -31,5 +31,3 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           source: "path/to/your/local/project"
           remote_path: "${{ secrets.REMOTE_PATH }}"
-
-    # Add more steps as needed, such as building and deploying your application
